@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registrer bruker</title>
+  </head>
+  <body>
+    <form class="input-container" onsubmit="displayName(); return true;">
+      <!-- Form to input name and submit -->
+      <h1>Registrer deg for å stemme:</h1>
+      <div class="input-div">
+        <!-- Container for input field -->
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Skriv inn ditt navn: "
+          required
+        />
+        <!-- Input field for name -->
+      </div>
+      <br /><br />
+      <!-- Adds some space between input field and button -->
+      <button formaction="stemmeteller.html" id="userInputbtn" type="submit">
+        Gå videre
+      </button>
+      <!-- Button to submit the form -->
+      <p id="displayUserName"></p>
+      <!-- Label to display the user's name -->
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

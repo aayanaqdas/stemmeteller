@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Stemmeteller</title>
+  </head>
+  <body>
+    <div class="stemmeteller">
+      <!-- Container for election info -->
+      <div class="container">
+        <!-- Container for chart and party buttons -->
+        <h1>Erikstad Kommune - Valg</h1>
+        <!-- Title of the page -->
+        <div class="chart" style="width: 60vw; height: 35vh">
+          <!-- Container for chart -->
+          <canvas id="myChart"></canvas>
+          <!-- Chart itself -->
+        </div>
+        <div class="partier">
+          <!-- Container for party buttons -->
+          <button type="button" id="APbtn">
+            <!-- Button for AP party -->
+            <label id="APcountLabel"></label>
+            <!-- Label for AP party vote count -->
+          </button>
+
+          <button type="button" id="Hbtn">
+            <!-- Button for H party -->
+            <label id="HcountLabel"></label>
+            <!-- Label for H party vote count -->
+          </button>
+
+          <button type="button" id="SPbtn">
+            <!-- Button for SP party -->
+            <label id="SPcountLabel"></label>
+            <!-- Label for SP party vote count -->
+          </button>
+
+          <button type="button" id="FRPbtn">
+            <!-- Button for FRP party -->
+            <label id="FRPcountLabel"></label>
+            <!-- Label for FRP party vote count -->
+          </button>
+
+          <button type="button" id="MDGbtn">
+            <!-- Button for MDG party -->
+            <label id="MDGcountLabel"></label>
+            <!-- Label for MDG party vote count -->
+          </button>
+        </div>
+        <div class="bottomBtns">
+          <!-- Container for bottom buttons -->
+          <button type="button" id="clearAll">Nullstill Alle</button>
+          <!-- Button to reset all votes -->
+          <a href="index.html"><button>Ny bruker</button></a>
+          <!-- Button to create a new user -->
+        </div>
+      </div>
+      <p id="displayUserName"></p>
+      <!-- Label to display the user's name -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Chart.js library -->
+    <script src="script.js"></script>
+  </body>
+</html>
